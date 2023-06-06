@@ -1,0 +1,354 @@
+[
+	{
+		"name":"Wrath of the Sky",
+		"components":[
+			{
+				"name":"Thunderstorm",
+				"type":"Lightning Blast",
+				"primary":true
+			},
+			{
+				"name":"Meteor",
+				"type":"Meteor Shower"
+			}
+		]
+	},
+	{
+		"name":"Flying Swords",
+		"components":[
+			{
+				"name":"Spirit",
+				"type":"Arcane Blade",
+				"primary":true
+			},
+			{
+				"name":"Electric Shock",
+				"type":"Chain Lightning"
+			}
+		]
+	},
+	{
+		"name":"Light Bolt Blast",
+		"components":[
+			{
+				"name":"Energy Bolt",
+				"type":"Charged Particles",
+				"primary":true
+			},
+			{
+				"name":"Spirit",
+				"type":"Familiar"
+			}
+		]
+	},
+	{
+		"name":"Terra Current",
+		"components":[
+			{
+				"name":"Arcane Ray",
+				"type":"Electromagnetic Discharge",
+				"primary":true
+			},
+			{
+				"name":"Electric Shock",
+				"type":"Superconductivity"
+			}
+		]
+	},
+	{
+		"name":"War Climate",
+		"components":[
+			{
+				"name":"Meteor",
+				"type":"Meteor Shower",
+				"primary":true
+			},
+			{
+				"name":"Blizzard",
+				"type":"Shooting Star"
+			}
+		]
+	},
+	{
+		"name":"Demon Equation",
+		"components":[
+			{
+				"name":"Fireball",
+				"type":"Great Explosion",
+				"primary":true
+			},
+			{
+				"name":"Energy Bolt",
+				"type":"Flare"
+			}
+		]
+	},
+	{
+		"name":"Frenzy",
+		"components":[
+			{
+				"name":"Flash Shock",
+				"type":"Devil's Nail",
+				"primary":true
+			},
+			{
+				"name":"Magic Bolt",
+				"type":"Spray"
+			}
+		]
+	},
+	{
+		"name":"Pandaemonium",
+		"components":[
+			{
+				"name":"Fireball",
+				"type":"Constellation",
+				"primary":true
+			},
+			{
+				"name":"Satellite",
+				"type":"Will-o'-the-wisp"
+			}
+		]
+	},
+	{
+		"name":"Reaction",
+		"components":[
+			{
+				"name":"Energy Bolt",
+				"type":"Spark",
+				"primary":true
+			},
+			{
+				"name":"Shield",
+				"type":"Destruction Field"
+			}
+		]
+	},
+	{
+		"name":"Vortex",
+		"components":[
+			{
+				"name":"Cyclone",
+				"type":"Void",
+				"primary":true
+			},
+			{
+				"name":"Satellite",
+				"type":"Antigravity"
+			}
+		]
+	},
+	{
+		"name":"Breath of fire",
+		"components":[
+			{
+				"name":"Incineration",
+				"type":"Cerberus Flame",
+				"primary":true
+			},
+			{
+				"name":"Arcane Ray",
+				"type":"Reflection"
+			}
+		]
+	},
+	{
+		"name":"Ether Fire",
+		"components":[
+			{
+				"name":"Blizzard",
+				"type":"Blaze",
+				"primary":true
+			},
+			{
+				"name":"Incineration",
+				"type":"Flame Strike"
+			}
+		]
+	},
+	{
+		"name":"Orbital Bombing",
+		"components":[
+			{
+				"name":"Thunderstorm",
+				"type":"Judgement",
+				"primary":true
+			},
+			{
+				"name":"Blizzard",
+				"type":"Shooting Star"
+			}
+		]
+	},
+	{
+		"name":"Neutron Generation",
+		"components":[
+			{
+				"name":"Cyclone",
+				"type":"Electric Orb",
+				"primary":true
+			},
+			{
+				"name":"Satellite",
+				"type":"Nuclear Fusion"
+			}
+		]
+	},
+	{
+		"name":"Winter Storm",
+		"components":[
+			{
+				"name":"Blizzard",
+				"type":"Cold Weather",
+				"primary":true
+			},
+			{
+				"name":"Fireball",
+				"type":"Poison Gas"
+			}
+		]
+	},
+	{
+		"name":"Plasma Beam",
+		"description":"Four semi-powerful beams rotate aroud the player constantly",
+		"components":[
+			{
+				"name":"Arcane Ray",
+				"type":"Destruction Ray",
+				"primary":true
+			},
+			{
+				"name":"Satellite",
+				"type":"Nuclear Fusion"
+			}
+		]
+	},
+	{
+		"name":"Lightning Blast",
+		"components":[
+			{
+				"name":"Thunderstorm",
+				"type":"A bolt from the blue",
+				"primary":true
+			},
+			{
+				"name":"Electric Shock",
+				"type":"Chain Lightning"
+			}
+		]
+	},
+	{
+		"name":"Quantum Explosion",
+		"components":[
+			{
+				"name":"Shield",
+				"type":"Destruction Field",
+				"primary":true
+			},
+			{
+				"name":"Armageddon",
+				"type":"Apocalypse"
+			}
+		]
+	},
+	{
+		"name":"Inferno",
+		"components":[
+			{
+				"name":"Incineration",
+				"type":"Flame Strike",
+				"primary":true
+			},
+			{
+				"name":"Lava Zone",
+				"type":"Melting"
+			}
+		]
+	},
+	{
+		"name":"Lightning Attunement",
+		"components":[
+			{
+				"name":"Electric Zone",
+				"type":"Discharge",
+				"primary":true
+			},
+			{
+				"name":"Satellite",
+				"type":"Will-o'-the-wisp"
+			}
+		]
+	},
+	{
+		"name":"Blast Furnace",
+		"components":[
+			{
+				"name":"Lava Zone",
+				"type":"Magma Eruption",
+				"primary":true
+			},
+			{
+				"name":"Meteor",
+				"type":"Volcanic Eruption"
+			}
+		]
+	},
+	{
+		"name":"Runaway Electricity",
+		"components":[
+			{
+				"name":"Electric Shock",
+				"type":"Chain Lightning",
+				"primary":true
+			},
+			{
+				"name":"Spirit",
+				"type":"Familiar"
+			}
+		]
+	},
+	{
+		"name":"Deluge",
+		"components":[
+			{
+				"name":"Tsunami",
+				"type":"Siren Song",
+				"primary":true
+			},
+			{
+				"name":"Cyclone",
+				"type":"Climate Change"
+			}
+		]
+	},
+	{
+		"name":"Booming Snowflakes",
+		"description":"Twenty frost novas explode throughout the screen, cool down same as frost nova",
+		"components":[
+			{
+				"name":"Frost Nova",
+				"type":"Ice Age",
+				"primary":true
+			},
+			{
+				"name":"Tsunami",
+				"type":"Pole"
+			}
+		]
+	},
+	{
+		"name":"Master of Storms",
+		"components":[
+			{
+				"name":"Cyclone",
+				"type":"Climate Change",
+				"primary":true
+			},
+			{
+				"name":"Magic Bolt",
+				"type":"Spray"
+			}
+		]
+	}
+]
