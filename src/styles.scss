@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    color: #444;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  body, input[type="text"], button {
+    color: #333;
+    font-family: Cambria, Georgia, serif;
+  }
+  button {
+    background-color: #1c3c4e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(209, 209, 209);
+    font-size: 1.2rem;
+    padding: .5rem;
+    margin-right: 1rem;
+    margin-bottom: .1rem;
+    margin-top: .1rem;
+    width: 100%;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+  }
+  
+
+  @mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    position: relative;
+    width: $size;
+    height: $size;
+  
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: ($size - $thickness) / 2;
+      left: 0;
+      right: 0;
+      height: $thickness;
+      background: $color;
+      border-radius: $thickness;
+    }
+  
+    &:before {
+      transform: rotate(45deg);
+    }
+  
+    &:after {
+      transform: rotate(-45deg);
+    }
+  
+    span {
+      display: block;
+    }
+  
+  }
+
+  .btn-close {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: hsl(0, 98%, 37%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 150ms;
+    
+    .icon-cross {
+      @include cross(15px, #fff, 6px);   
+    }
+    
+    &:hover,
+    &:focus {
+      transform: rotateZ(90deg);
+      background: hsl(0, 98%, 37%);
+    }
+  
+  }
+  /* everywhere else */
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+  }

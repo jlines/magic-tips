@@ -1,2 +1,32 @@
-<p>tip-view works!</p>
-{{ skillList | json }}
+<div *ngIf="availableCombos"><h2>{{ selectedSkill }} 
+    <button style="float:right" type="button" (click)="onDeselect()" class="btn-close">
+    <span class="icon-cross"></span>
+  </button></h2>
+    <div *ngIf="primaryCombos?.length > 0"><h4>Primary Combos</h4>
+        <div *ngFor="let combo of primaryCombos">
+            {{ combo.name }} - {{ combo.description }}
+            <ul>
+                <li>{{ combo.components[0].name }} - {{ combo.components[0].type }}</li>
+                <li>{{ combo.components[1].name }} - {{ combo.components[1].type }}</li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="secondaryCombos?.length > 0"><h4>Secondary Combos</h4>
+        <div *ngFor="let combo of secondaryCombos">
+            {{ combo.name }} - {{ combo.description }}
+            <ul>
+                <li>{{ combo.components[0].name }} - {{ combo.components[0].type }}</li>
+                <li>{{ combo.components[1].name }} - {{ combo.components[1].type }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<p>
+<div *ngIf="!availableCombos">
+    <div  *ngFor="let skill of skillList">
+        <button type="button" (click)="onSelect(skill)">
+            <span class="name">{{ skill }}</span>
+        </button>
+    </div>
+</div>
+
