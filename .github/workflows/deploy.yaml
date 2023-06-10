@@ -37,7 +37,6 @@ jobs:
           role-to-assume: arn:aws:iam::613111389734:role/GithubActions
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ vars.AWS_REGION }}
-      # Hello from AWS: WhoAmI
-      - name: Sts GetCallerIdentity
+      - name:  Copy index.html to s3
         run: |
-          aws sts get-caller-identity
+          aws s3 cp ./README.md s3://magic-survival-tips/
