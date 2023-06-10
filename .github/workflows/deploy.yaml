@@ -8,6 +8,9 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -19,24 +22,15 @@ jobs:
 
       - name: Build the project
         run: ng build
-
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    environment: main
-    needs: build
-    permissions:
-      id-token: write
-      contents: read
-    steps:
-      - name: print
-        run: echo ${{ secrets.GITHUB_TOKEN }}
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::613111389734:role/GithubActions
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ vars.AWS_REGION }}
-      - name:  Copy index.html to s3
+      - name: Copy build to s3
         run: |
           aws s3 sync ./dist s3://magic-survival-tips/
+      - name: Invalidate Cloudfront
+        run: |
+          aws cloudfront create-invalidation --distribution-id E1I7HHHRU5FUYJ --paths "/*"
