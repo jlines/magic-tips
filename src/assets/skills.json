@@ -1,0 +1,116 @@
+[
+    {
+        "name":"Arcane Ray",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Armageddon",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Blizzard",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Cyclone",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Electric Shock",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Electric Zone",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Energy Bolt",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Fireball",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Flash Shock",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Frost Nova",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Incineration",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Lava Zone",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Magic Bolt",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Meteor",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Satellite",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Shield",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Spirit",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Thunderstorm",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    },
+    {
+        "name":"Tsunami",
+        "artifacts":[],
+        "types":[],
+        "cooldown":0
+    }
+]

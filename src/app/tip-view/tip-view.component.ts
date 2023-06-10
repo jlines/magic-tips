@@ -9,12 +9,12 @@ import _, { List } from 'lodash';
 })
 export class TipViewComponent implements OnInit {
   public comboData: any;
-  public testList: Array<string> = ['a','b','c','d'];
   public skillList: any;
+  public skillData: any;
   public constructor(private http: HttpClient) {}
   public ngOnInit(): void {
-    const url: string = '/assets/combos.json';
-    this.http.get(url).subscribe((response: any) => {
+    const combo_url: string = '/assets/combos.json';
+    this.http.get(combo_url).subscribe((response: any) => {
       this.comboData = response;
 
       this.skillList = _(response)
@@ -24,6 +24,11 @@ export class TipViewComponent implements OnInit {
                         .sortBy()
                         .value()
     })
+
+    const skill_url: string = '/assets/skills.json';
+    this.http.get(skill_url).subscribe((response: any) => {
+      this.skillData = response;
+    })
   }
 
   selectedSkill?: any;
@@ -31,16 +36,17 @@ export class TipViewComponent implements OnInit {
   primaryCombos?: any;
   secondaryCombos?: any;
 
-  onSelect(skill: string): void {
+  onSelect(skill: any): void {
     this.selectedSkill = skill;
+    console.log(skill);
     this.availableCombos = _.filter(this.comboData, (o) => 
       _.find(o.components, (c) => {
-        return c.name.toLowerCase() === skill.toLowerCase();
+        return c.name.toLowerCase() === skill.name.toLowerCase();
       }));
 
     this.primaryCombos = _.filter(this.comboData, (o) => 
       _.find(o.components, (c) => {
-        return c.name.toLowerCase() === skill.toLowerCase() && c.primary;
+        return c.name.toLowerCase() === skill.name.toLowerCase() && c.primary;
       }));
 
     this.secondaryCombos = this.availableCombos.filter((i: any) => !this.primaryCombos.find((f: any) => f.name === i.name));
