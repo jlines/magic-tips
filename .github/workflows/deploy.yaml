@@ -30,7 +30,7 @@ jobs:
       contents: read
     steps:
       - name: print
-        run: echo {{ secrets.GITHUB_TOKEN }}
+        run: echo ${{ secrets.GITHUB_TOKEN }}
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
