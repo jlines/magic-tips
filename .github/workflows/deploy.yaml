@@ -23,6 +23,7 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
+    environment: main
     needs: build
     steps:
       - name: configure aws credentials
