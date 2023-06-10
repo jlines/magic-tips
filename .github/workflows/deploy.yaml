@@ -30,7 +30,7 @@ jobs:
       contents: read
     steps:
       - name: configure aws credentials
-        uses: aws-actions/configure-aws-credentials@v1.7.0
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           role-to-assume: arn:aws:iam::613111389734:role/GithubActions
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
