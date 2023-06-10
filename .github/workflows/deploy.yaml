@@ -31,7 +31,7 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
       - name: Copy build to s3
         run: |
-          aws s3 sync ./dist s3://magic-survival-tips/
+          aws s3 sync ./dist/magic_tips s3://magic-survival-tips/
       - name: Invalidate Cloudfront
         run: |
           aws cloudfront create-invalidation --distribution-id E1I7HHHRU5FUYJ --paths "/*"
